@@ -1,0 +1,261 @@
+|butterfly
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+y1[0] << add_sub:add.sum
+y1[1] << add_sub:add.sum
+y1[2] << add_sub:add.sum
+y1[3] << add_sub:add.sum
+y2[0] << add_sub:sub.sum
+y2[1] << add_sub:sub.sum
+y2[2] << add_sub:sub.sum
+y2[3] << add_sub:sub.sum
+
+
+|butterfly|add_sub:add
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => xor1.IN0
+b[1] => xor2.IN0
+b[2] => xor3.IN0
+b[3] => xor4.IN0
+c => c.IN1
+sum[0] <= full_adder:fa0.sum
+sum[1] <= full_adder:fa1.sum
+sum[2] <= full_adder:fa2.sum
+sum[3] <= full_adder:fa3.sum
+carry <= full_adder:fa3.carry
+
+
+|butterfly|add_sub:add|full_adder:fa0
+a => a.IN1
+b => b.IN1
+c => c.IN1
+sum <= half_adder:HA2.sum
+carry <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa0|half_adder:HA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa0|half_adder:HA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa1
+a => a.IN1
+b => b.IN1
+c => c.IN1
+sum <= half_adder:HA2.sum
+carry <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa1|half_adder:HA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa1|half_adder:HA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa2
+a => a.IN1
+b => b.IN1
+c => c.IN1
+sum <= half_adder:HA2.sum
+carry <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa2|half_adder:HA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa2|half_adder:HA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa3
+a => a.IN1
+b => b.IN1
+c => c.IN1
+sum <= half_adder:HA2.sum
+carry <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa3|half_adder:HA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:add|full_adder:fa3|half_adder:HA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => xor1.IN0
+b[1] => xor2.IN0
+b[2] => xor3.IN0
+b[3] => xor4.IN0
+c => c.IN1
+sum[0] <= full_adder:fa0.sum
+sum[1] <= full_adder:fa1.sum
+sum[2] <= full_adder:fa2.sum
+sum[3] <= full_adder:fa3.sum
+carry <= full_adder:fa3.carry
+
+
+|butterfly|add_sub:sub|full_adder:fa0
+a => a.IN1
+b => b.IN1
+c => c.IN1
+sum <= half_adder:HA2.sum
+carry <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa0|half_adder:HA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa0|half_adder:HA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa1
+a => a.IN1
+b => b.IN1
+c => c.IN1
+sum <= half_adder:HA2.sum
+carry <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa1|half_adder:HA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa1|half_adder:HA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa2
+a => a.IN1
+b => b.IN1
+c => c.IN1
+sum <= half_adder:HA2.sum
+carry <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa2|half_adder:HA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa2|half_adder:HA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa3
+a => a.IN1
+b => b.IN1
+c => c.IN1
+sum <= half_adder:HA2.sum
+carry <= or1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa3|half_adder:HA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|butterfly|add_sub:sub|full_adder:fa3|half_adder:HA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+

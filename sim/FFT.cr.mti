@@ -1,0 +1,162 @@
+D:/Cap_pro/sim/comp2s.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/comp2s.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module comp2s
+
+Top level modules:
+	comp2s
+
+} {} {}} D:/Cap_pro/sim/fft_4point.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/fft_4point.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fft_4point
+
+Top level modules:
+	fft_4point
+
+} {} {}} D:/Cap_pro/sim/Mux2to1_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/Mux2to1_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux2to1_tb
+
+Top level modules:
+	Mux2to1_tb
+
+} {} {}} D:/Cap_pro/sim/fft_8point_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/fft_8point_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fft_8point_tb
+
+Top level modules:
+	fft_8point_tb
+
+} {} {}} D:/Cap_pro/sim/DeMux1to2_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/DeMux1to2_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DeMux1to2_tb
+
+Top level modules:
+	DeMux1to2_tb
+
+} {} {}} D:/Cap_pro/sim/butterfly_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/butterfly_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module butterfly_tb
+
+Top level modules:
+	butterfly_tb
+
+} {} {}} D:/Cap_pro/sim/add_sub_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/add_sub_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module add_sub_tb
+
+Top level modules:
+	add_sub_tb
+
+} {} {}} D:/Test/rtl/full_adder.v {1 {vlog -work work -stats=none D:/Test/rtl/full_adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module full_adder
+
+Top level modules:
+	full_adder
+
+} {} {}} D:/Cap_pro/sim/fft_8point.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/fft_8point.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fft_8point
+
+Top level modules:
+	fft_8point
+
+} {} {}} D:/Cap_pro/sim/DeMux1to2.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/DeMux1to2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DeMux1to2
+
+Top level modules:
+	DeMux1to2
+
+} {} {}} D:/Cap_pro/sim/butterfly.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/butterfly.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module butterfly
+
+Top level modules:
+	butterfly
+
+} {} {}} D:/Cap_pro/sim/delay_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/delay_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module delay_tb
+
+Top level modules:
+	delay_tb
+
+} {} {}} D:/Cap_pro/sim/last_stage_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/last_stage_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module delay_tb
+
+Top level modules:
+	delay_tb
+
+} {} {}} D:/Cap_pro/sim/D_FF_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/D_FF_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module d_ff_tb
+
+Top level modules:
+	d_ff_tb
+
+} {} {}} D:/Cap_pro/sim/comp_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/comp_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module commp_tb
+
+Top level modules:
+	commp_tb
+
+} {} {}} D:/Cap_pro/sim/Multiplier.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/Multiplier.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module multiplier
+
+Top level modules:
+	multiplier
+
+} {} {}} D:/Cap_pro/sim/delay.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/delay.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module delay
+
+Top level modules:
+	delay
+
+} {} {}} D:/Cap_pro/sim/last_stage.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/last_stage.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module delay
+
+Top level modules:
+	delay
+
+} {} {}} D:/Test/rtl/half_adder.v {1 {vlog -work work -stats=none D:/Test/rtl/half_adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module half_adder
+
+Top level modules:
+	half_adder
+
+} {} {}} D:/Cap_pro/sim/D_FF.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/D_FF.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module D_FF
+
+Top level modules:
+	D_FF
+
+} {} {}} D:/Cap_pro/sim/Mux2to1.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/Mux2to1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Mux2to1
+
+Top level modules:
+	Mux2to1
+
+} {} {}} D:/Cap_pro/sim/fft_4point_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/fft_4point_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fft_4point_tb
+
+Top level modules:
+	fft_4point_tb
+
+} {} {}} D:/Cap_pro/sim/add_sub.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/add_sub.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module add_sub
+
+Top level modules:
+	add_sub
+
+} {} {}}

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Feb 20 12:26:30 2022
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : D_FF
+Top-level Entity Name : D_FF
+Family : MAX V
+Device : 5M40ZE64C4
+Timing Models : Final
+Total logic elements : 4 / 40 ( 10 % )
+Total pins : 10 / 54 ( 19 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

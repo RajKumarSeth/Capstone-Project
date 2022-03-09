@@ -1,0 +1,438 @@
+TimeQuest Timing Analyzer report for delay
+Wed Feb 23 13:26:49 2022
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clk'
+ 12. Setup: 'sel_1'
+ 13. Hold: 'clk'
+ 14. Hold: 'sel_1'
+ 15. Setup Transfers
+ 16. Hold Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths Summary
+ 20. Clock Status Summary
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. Unconstrained Input Ports
+ 24. Unconstrained Output Ports
+ 25. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                           ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                           ;
+; Revision Name         ; delay                                               ;
+; Device Family         ; MAX V                                               ;
+; Device Name           ; 5M40ZE64C4                                          ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }   ;
+; sel        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { sel }   ;
+; sel_1      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { sel_1 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
++--------------------------------+
+; Setup Summary                  ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -5.211 ; -19.765       ;
+; sel_1 ; -4.534 ; -29.996       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 1.256 ; 0.000         ;
+; sel_1 ; 2.021 ; 0.000         ;
++-------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++--------------------------------+
+; Minimum Pulse Width Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -2.289 ; -2.289        ;
+; sel   ; -2.289 ; -2.289        ;
+; sel_1 ; -2.289 ; -2.289        ;
++-------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                           ;
++--------+------------------------+----------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node              ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------+----------------+--------------+-------------+--------------+------------+------------+
+; -5.211 ; DeMux1to2:demux1|y2[1] ; D_FF:dff1|q[2] ; sel          ; clk         ; 0.500        ; -0.490     ; 4.961      ;
+; -4.948 ; DeMux1to2:demux1|y2[1] ; D_FF:dff1|q[3] ; sel          ; clk         ; 0.500        ; -0.490     ; 4.698      ;
+; -4.903 ; DeMux1to2:demux2|y1[1] ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 1.000        ; -0.132     ; 5.511      ;
+; -4.836 ; DeMux1to2:demux1|y2[0] ; D_FF:dff1|q[2] ; sel          ; clk         ; 0.500        ; -0.486     ; 4.590      ;
+; -4.819 ; DeMux1to2:demux2|y1[1] ; D_FF:dff1|q[1] ; sel_1        ; clk         ; 1.000        ; -0.132     ; 5.427      ;
+; -4.787 ; DeMux1to2:demux2|y1[0] ; D_FF:dff1|q[0] ; sel_1        ; clk         ; 1.000        ; -0.125     ; 5.402      ;
+; -4.693 ; DeMux1to2:demux1|y2[2] ; D_FF:dff1|q[3] ; sel          ; clk         ; 0.500        ; -0.443     ; 4.490      ;
+; -4.640 ; DeMux1to2:demux2|y1[1] ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 1.000        ; -0.132     ; 5.248      ;
+; -4.573 ; DeMux1to2:demux1|y2[0] ; D_FF:dff1|q[3] ; sel          ; clk         ; 0.500        ; -0.486     ; 4.327      ;
+; -4.234 ; DeMux1to2:demux2|y1[0] ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 1.000        ; -0.125     ; 4.849      ;
+; -4.059 ; DeMux1to2:demux1|y2[0] ; D_FF:dff1|q[1] ; sel          ; clk         ; 0.500        ; -0.486     ; 3.813      ;
+; -3.971 ; DeMux1to2:demux2|y1[0] ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 1.000        ; -0.125     ; 4.586      ;
+; -3.960 ; DeMux1to2:demux2|y1[0] ; D_FF:dff1|q[1] ; sel_1        ; clk         ; 1.000        ; -0.125     ; 4.575      ;
+; -3.941 ; DeMux1to2:demux1|y2[1] ; D_FF:dff1|q[1] ; sel          ; clk         ; 0.500        ; -0.490     ; 3.691      ;
+; -3.811 ; sel_1                  ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 0.500        ; 3.679      ; 7.730      ;
+; -3.790 ; DeMux1to2:demux1|y2[2] ; D_FF:dff1|q[2] ; sel          ; clk         ; 0.500        ; -0.443     ; 3.587      ;
+; -3.764 ; DeMux1to2:demux1|y2[3] ; D_FF:dff1|q[3] ; sel          ; clk         ; 0.500        ; -0.110     ; 3.894      ;
+; -3.513 ; DeMux1to2:demux2|y1[2] ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 1.000        ; -0.112     ; 4.141      ;
+; -3.471 ; sel_1                  ; D_FF:dff1|q[1] ; sel_1        ; clk         ; 0.500        ; 3.679      ; 7.390      ;
+; -3.356 ; DeMux1to2:demux2|y1[2] ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 1.000        ; -0.112     ; 3.984      ;
+; -3.311 ; sel_1                  ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 1.000        ; 3.679      ; 7.730      ;
+; -3.272 ; sel                    ; D_FF:dff1|q[2] ; sel          ; clk         ; 0.500        ; 3.679      ; 7.191      ;
+; -3.081 ; DeMux1to2:demux1|y2[0] ; D_FF:dff1|q[0] ; sel          ; clk         ; 0.500        ; -0.486     ; 2.835      ;
+; -2.971 ; sel_1                  ; D_FF:dff1|q[1] ; sel_1        ; clk         ; 1.000        ; 3.679      ; 7.390      ;
+; -2.932 ; sel                    ; D_FF:dff1|q[1] ; sel          ; clk         ; 0.500        ; 3.679      ; 6.851      ;
+; -2.906 ; sel_1                  ; D_FF:dff1|q[0] ; sel_1        ; clk         ; 0.500        ; 3.679      ; 6.825      ;
+; -2.772 ; sel                    ; D_FF:dff1|q[2] ; sel          ; clk         ; 1.000        ; 3.679      ; 7.191      ;
+; -2.432 ; sel                    ; D_FF:dff1|q[1] ; sel          ; clk         ; 1.000        ; 3.679      ; 6.851      ;
+; -2.406 ; sel_1                  ; D_FF:dff1|q[0] ; sel_1        ; clk         ; 1.000        ; 3.679      ; 6.825      ;
+; -2.403 ; DeMux1to2:demux2|y1[3] ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 1.000        ; -0.123     ; 3.020      ;
+; -2.367 ; sel                    ; D_FF:dff1|q[0] ; sel          ; clk         ; 0.500        ; 3.679      ; 6.286      ;
+; -2.069 ; sel_1                  ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 0.500        ; 3.679      ; 5.988      ;
+; -1.867 ; sel                    ; D_FF:dff1|q[0] ; sel          ; clk         ; 1.000        ; 3.679      ; 6.286      ;
+; -1.569 ; sel_1                  ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 1.000        ; 3.679      ; 5.988      ;
+; -1.522 ; DeMux1to2:demux1|y1[3] ; D_FF:dff1|q[3] ; sel          ; clk         ; 1.000        ; -0.460     ; 1.802      ;
+; -1.266 ; DeMux1to2:demux1|y1[0] ; D_FF:dff1|q[0] ; sel          ; clk         ; 1.000        ; -0.459     ; 1.547      ;
+; -1.240 ; sel                    ; D_FF:dff1|q[3] ; sel          ; clk         ; 0.500        ; 3.679      ; 5.159      ;
+; -0.740 ; sel                    ; D_FF:dff1|q[3] ; sel          ; clk         ; 1.000        ; 3.679      ; 5.159      ;
+; -0.635 ; DeMux1to2:demux1|y1[1] ; D_FF:dff1|q[1] ; sel          ; clk         ; 1.000        ; -0.489     ; 0.886      ;
+; -0.590 ; DeMux1to2:demux1|y1[2] ; D_FF:dff1|q[2] ; sel          ; clk         ; 1.000        ; -0.444     ; 0.886      ;
++--------+------------------------+----------------+--------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'sel_1'                                                                                                         ;
++--------+----------------+------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node      ; To Node                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------+------------------------+--------------+-------------+--------------+------------+------------+
+; -4.534 ; D_FF:dff1|q[1] ; DeMux1to2:demux2|y1[1] ; clk          ; sel_1       ; 1.000        ; 0.132      ; 2.153      ;
+; -4.188 ; D_FF:dff1|q[3] ; DeMux1to2:demux2|y2[3] ; clk          ; sel_1       ; 0.500        ; 0.113      ; 2.592      ;
+; -3.915 ; D_FF:dff1|q[0] ; DeMux1to2:demux2|y2[0] ; clk          ; sel_1       ; 0.500        ; 0.126      ; 2.169      ;
+; -3.735 ; D_FF:dff1|q[2] ; DeMux1to2:demux2|y2[2] ; clk          ; sel_1       ; 0.500        ; 0.112      ; 2.165      ;
+; -3.714 ; D_FF:dff1|q[1] ; DeMux1to2:demux2|y2[1] ; clk          ; sel_1       ; 0.500        ; 0.131      ; 2.152      ;
+; -3.411 ; D_FF:dff1|q[3] ; DeMux1to2:demux2|y1[3] ; clk          ; sel_1       ; 1.000        ; 0.123      ; 2.153      ;
+; -3.262 ; D_FF:dff1|q[2] ; DeMux1to2:demux2|y1[2] ; clk          ; sel_1       ; 1.000        ; 0.112      ; 2.165      ;
+; -3.237 ; D_FF:dff1|q[0] ; DeMux1to2:demux2|y1[0] ; clk          ; sel_1       ; 1.000        ; 0.125      ; 2.169      ;
++--------+----------------+------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                           ;
++-------+------------------------+----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node              ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------+----------------+--------------+-------------+--------------+------------+------------+
+; 1.256 ; DeMux1to2:demux1|y1[2] ; D_FF:dff1|q[2] ; sel          ; clk         ; 0.000        ; -0.444     ; 0.886      ;
+; 1.301 ; DeMux1to2:demux1|y1[1] ; D_FF:dff1|q[1] ; sel          ; clk         ; 0.000        ; -0.489     ; 0.886      ;
+; 1.406 ; sel                    ; D_FF:dff1|q[3] ; sel          ; clk         ; 0.000        ; 3.679      ; 5.159      ;
+; 1.906 ; sel                    ; D_FF:dff1|q[3] ; sel          ; clk         ; -0.500       ; 3.679      ; 5.159      ;
+; 1.932 ; DeMux1to2:demux1|y1[0] ; D_FF:dff1|q[0] ; sel          ; clk         ; 0.000        ; -0.459     ; 1.547      ;
+; 2.188 ; DeMux1to2:demux1|y1[3] ; D_FF:dff1|q[3] ; sel          ; clk         ; 0.000        ; -0.460     ; 1.802      ;
+; 2.235 ; sel_1                  ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 0.000        ; 3.679      ; 5.988      ;
+; 2.533 ; sel                    ; D_FF:dff1|q[0] ; sel          ; clk         ; 0.000        ; 3.679      ; 6.286      ;
+; 2.735 ; sel_1                  ; D_FF:dff1|q[3] ; sel_1        ; clk         ; -0.500       ; 3.679      ; 5.988      ;
+; 3.033 ; sel                    ; D_FF:dff1|q[0] ; sel          ; clk         ; -0.500       ; 3.679      ; 6.286      ;
+; 3.069 ; DeMux1to2:demux2|y1[3] ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 0.000        ; -0.123     ; 3.020      ;
+; 3.072 ; sel_1                  ; D_FF:dff1|q[0] ; sel_1        ; clk         ; 0.000        ; 3.679      ; 6.825      ;
+; 3.098 ; sel                    ; D_FF:dff1|q[1] ; sel          ; clk         ; 0.000        ; 3.679      ; 6.851      ;
+; 3.438 ; sel                    ; D_FF:dff1|q[2] ; sel          ; clk         ; 0.000        ; 3.679      ; 7.191      ;
+; 3.572 ; sel_1                  ; D_FF:dff1|q[0] ; sel_1        ; clk         ; -0.500       ; 3.679      ; 6.825      ;
+; 3.598 ; sel                    ; D_FF:dff1|q[1] ; sel          ; clk         ; -0.500       ; 3.679      ; 6.851      ;
+; 3.637 ; sel_1                  ; D_FF:dff1|q[1] ; sel_1        ; clk         ; 0.000        ; 3.679      ; 7.390      ;
+; 3.747 ; DeMux1to2:demux1|y2[0] ; D_FF:dff1|q[0] ; sel          ; clk         ; -0.500       ; -0.486     ; 2.835      ;
+; 3.938 ; sel                    ; D_FF:dff1|q[2] ; sel          ; clk         ; -0.500       ; 3.679      ; 7.191      ;
+; 3.977 ; sel_1                  ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 0.000        ; 3.679      ; 7.730      ;
+; 4.022 ; DeMux1to2:demux2|y1[2] ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 0.000        ; -0.112     ; 3.984      ;
+; 4.137 ; sel_1                  ; D_FF:dff1|q[1] ; sel_1        ; clk         ; -0.500       ; 3.679      ; 7.390      ;
+; 4.179 ; DeMux1to2:demux2|y1[2] ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 0.000        ; -0.112     ; 4.141      ;
+; 4.430 ; DeMux1to2:demux1|y2[3] ; D_FF:dff1|q[3] ; sel          ; clk         ; -0.500       ; -0.110     ; 3.894      ;
+; 4.456 ; DeMux1to2:demux1|y2[2] ; D_FF:dff1|q[2] ; sel          ; clk         ; -0.500       ; -0.443     ; 3.587      ;
+; 4.477 ; sel_1                  ; D_FF:dff1|q[2] ; sel_1        ; clk         ; -0.500       ; 3.679      ; 7.730      ;
+; 4.607 ; DeMux1to2:demux1|y2[1] ; D_FF:dff1|q[1] ; sel          ; clk         ; -0.500       ; -0.490     ; 3.691      ;
+; 4.626 ; DeMux1to2:demux2|y1[0] ; D_FF:dff1|q[1] ; sel_1        ; clk         ; 0.000        ; -0.125     ; 4.575      ;
+; 4.637 ; DeMux1to2:demux2|y1[0] ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 0.000        ; -0.125     ; 4.586      ;
+; 4.725 ; DeMux1to2:demux1|y2[0] ; D_FF:dff1|q[1] ; sel          ; clk         ; -0.500       ; -0.486     ; 3.813      ;
+; 4.900 ; DeMux1to2:demux2|y1[0] ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 0.000        ; -0.125     ; 4.849      ;
+; 5.239 ; DeMux1to2:demux1|y2[0] ; D_FF:dff1|q[3] ; sel          ; clk         ; -0.500       ; -0.486     ; 4.327      ;
+; 5.306 ; DeMux1to2:demux2|y1[1] ; D_FF:dff1|q[3] ; sel_1        ; clk         ; 0.000        ; -0.132     ; 5.248      ;
+; 5.359 ; DeMux1to2:demux1|y2[2] ; D_FF:dff1|q[3] ; sel          ; clk         ; -0.500       ; -0.443     ; 4.490      ;
+; 5.453 ; DeMux1to2:demux2|y1[0] ; D_FF:dff1|q[0] ; sel_1        ; clk         ; 0.000        ; -0.125     ; 5.402      ;
+; 5.485 ; DeMux1to2:demux2|y1[1] ; D_FF:dff1|q[1] ; sel_1        ; clk         ; 0.000        ; -0.132     ; 5.427      ;
+; 5.502 ; DeMux1to2:demux1|y2[0] ; D_FF:dff1|q[2] ; sel          ; clk         ; -0.500       ; -0.486     ; 4.590      ;
+; 5.569 ; DeMux1to2:demux2|y1[1] ; D_FF:dff1|q[2] ; sel_1        ; clk         ; 0.000        ; -0.132     ; 5.511      ;
+; 5.614 ; DeMux1to2:demux1|y2[1] ; D_FF:dff1|q[3] ; sel          ; clk         ; -0.500       ; -0.490     ; 4.698      ;
+; 5.877 ; DeMux1to2:demux1|y2[1] ; D_FF:dff1|q[2] ; sel          ; clk         ; -0.500       ; -0.490     ; 4.961      ;
++-------+------------------------+----------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Hold: 'sel_1'                                                                                                         ;
++-------+----------------+------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node      ; To Node                ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------+------------------------+--------------+-------------+--------------+------------+------------+
+; 2.021 ; D_FF:dff1|q[1] ; DeMux1to2:demux2|y1[1] ; clk          ; sel_1       ; 0.000        ; 0.132      ; 2.153      ;
+; 2.030 ; D_FF:dff1|q[3] ; DeMux1to2:demux2|y1[3] ; clk          ; sel_1       ; 0.000        ; 0.123      ; 2.153      ;
+; 2.044 ; D_FF:dff1|q[0] ; DeMux1to2:demux2|y1[0] ; clk          ; sel_1       ; 0.000        ; 0.125      ; 2.169      ;
+; 2.053 ; D_FF:dff1|q[2] ; DeMux1to2:demux2|y1[2] ; clk          ; sel_1       ; 0.000        ; 0.112      ; 2.165      ;
+; 2.521 ; D_FF:dff1|q[1] ; DeMux1to2:demux2|y2[1] ; clk          ; sel_1       ; -0.500       ; 0.131      ; 2.152      ;
+; 2.543 ; D_FF:dff1|q[0] ; DeMux1to2:demux2|y2[0] ; clk          ; sel_1       ; -0.500       ; 0.126      ; 2.169      ;
+; 2.553 ; D_FF:dff1|q[2] ; DeMux1to2:demux2|y2[2] ; clk          ; sel_1       ; -0.500       ; 0.112      ; 2.165      ;
+; 2.979 ; D_FF:dff1|q[3] ; DeMux1to2:demux2|y2[3] ; clk          ; sel_1       ; -0.500       ; 0.113      ; 2.592      ;
++-------+----------------+------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; sel        ; clk      ; 8        ; 14       ; 0        ; 0        ;
+; sel_1      ; clk      ; 14       ; 4        ; 0        ; 0        ;
+; clk        ; sel_1    ; 4        ; 0        ; 4        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; sel        ; clk      ; 8        ; 14       ; 0        ; 0        ;
+; sel_1      ; clk      ; 14       ; 4        ; 0        ; 0        ;
+; clk        ; sel_1    ; 4        ; 0        ; 4        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 16    ; 16   ;
+; Unconstrained Output Ports      ; 4     ; 4    ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clk    ; clk   ; Base ; Constrained ;
+; sel    ; sel   ; Base ; Constrained ;
+; sel_1  ; sel_1 ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; a[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; clear      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sel        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; y[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; y[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; y[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; y[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; a[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; a[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; clear      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; sel        ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; y[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; y[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; y[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; y[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Feb 23 13:26:48 2022
+Info: Command: quartus_sta delay -c delay
+Info: qsta_default_script.tcl version: #3
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (335093): TimeQuest Timing Analyzer is analyzing 16 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'delay.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name sel_1 sel_1
+    Info (332105): create_clock -period 1.000 -name sel sel
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332140): No fmax paths to report
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -5.211
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.211             -19.765 clk 
+    Info (332119):    -4.534             -29.996 sel_1 
+Info (332146): Worst-case hold slack is 1.256
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.256               0.000 clk 
+    Info (332119):     2.021               0.000 sel_1 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 clk 
+    Info (332119):    -2.289              -2.289 sel 
+    Info (332119):    -2.289              -2.289 sel_1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4664 megabytes
+    Info: Processing ended: Wed Feb 23 13:26:49 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

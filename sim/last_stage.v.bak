@@ -1,0 +1,16 @@
+module last_stage(a,clk,clear,y);
+parameter n=2;
+input [3:0]a;
+input clk,clear;
+output [3:0]y;
+wire w1,w2,w3;
+//wire w4;
+genvar i;
+//for(i=0;i<n/2-1;i=i+1)
+//begin 
+D_FF dff1(.d(a),.clk(clk),.clear(clear),.q(w1));
+butterfly but(.a(w1),.b(a),.y1(w2),.y2(w3));
+D_FF dff2(.d(w3),.clk(clk),.clear(clear),.q(y));
+//or or1(y[],w2,w4);
+//end
+endmodule 

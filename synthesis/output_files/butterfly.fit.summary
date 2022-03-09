@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Feb 22 17:33:13 2022
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : butterfly
+Top-level Entity Name : butterfly
+Family : MAX V
+Device : 5M40ZE64C4
+Timing Models : Final
+Total logic elements : 10 / 40 ( 25 % )
+Total pins : 16 / 54 ( 30 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

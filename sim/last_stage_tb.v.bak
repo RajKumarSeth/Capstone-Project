@@ -1,0 +1,21 @@
+module last_stage_tb;
+parameter n=2;
+reg [3:0]a;
+reg clk,clear;
+wire [3:0]y;
+last_stage ls(.a(a),.clk(clk),.clear(clear),.y(y));
+initial 
+begin 
+clk=0;
+forever #10 clk=~clk;
+end
+initial 
+begin 
+clear =1;
+#5 clear=0;
+a=2;
+#10 a=6;
+end
+initial $monitor("Input a=%b,clk=%b,clear=%b,Output y=%b",a,clk,clear,y);
+initial #400 $finish;
+endmodule  
