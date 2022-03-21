@@ -1,0 +1,16 @@
+module up_counter(clk,reset,count);
+parameter n=4;
+input clk,reset;
+output [n-1:0] count;
+reg [n-1:0] count = -1;  
+always @(negedge(clk))//or posedge(reset)
+begin
+if(reset == 1)
+count <= -1;
+else
+if(count == 3'b111)
+count <= 0;
+else
+count <= count + 1;
+end    
+endmodule

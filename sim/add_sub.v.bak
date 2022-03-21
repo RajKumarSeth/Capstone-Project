@@ -1,10 +1,11 @@
 module add_sub(a,b,c,sum,carry);
-input [3:0] a,b;
+parameter n=4;
+input [n-1:0] a,b;
 input c;
-output [3:0] sum;
+output [n-1:0] sum;
 output carry;
-wire [2:0] co;
-wire [3:0] x;
+wire [n-2:0] co;
+wire [n-1:0] x;
 xor xor0(x[0],b[0],c);
 xor xor1(x[1],b[1],c);
 xor xor2(x[2],b[2],c);
@@ -17,8 +18,8 @@ full_adder fa0(.a(a[0]),.b(x[0]),.c(c),.sum(sum[0]),.carry(co[0]));
 full_adder fa1(.a(a[1]),.b(x[1]),.c(co[0]),.sum(sum[1]),.carry(co[1]));
 full_adder fa2(.a(a[2]),.b(x[2]),.c(co[1]),.sum(sum[2]),.carry(co[2]));
 full_adder fa3(.a(a[3]),.b(x[3]),.c(co[2]),.sum(sum[3]),.carry(carry));
-//full_adder fa4(.a(a[4]),.b(x[4]),.c(c[3]),.sum(sum[4]),.carry(c[4]));
-//full_adder fa5(.a(a[5]),.b(x[5]),.c(c[4]),.sum(sum[5]),.carry(c[5]));
-//full_adder fa6(.a(a[6]),.b(x[6]),.c(c[5]),.sum(sum[6]),.carry(c[6]));
-//full_adder fa7(.a(a[7]),.b(x[7]),.c(c[6]),.sum(sum[7]),.carry(carry));
+//full_adder fa4(.a(a[4]),.b(x[4]),.c(co[3]),.sum(sum[4]),.carry(co[4]));
+//full_adder fa5(.a(a[5]),.b(x[5]),.c(co[4]),.sum(sum[5]),.carry(co[5]));
+//full_adder fa6(.a(a[6]),.b(x[6]),.c(co[5]),.sum(sum[6]),.carry(co[6]));
+//full_adder fa7(.a(a[7]),.b(x[7]),.c(co[6]),.sum(sum[7]),.carry(carry));
 endmodule

@@ -1,7 +1,8 @@
 module Mux2to1(a,b,sel,y);
-input [3:0] a,b;
+parameter n=8;
+input [n-1:0] a,b;
 input sel;
-output reg [3:0] y;
+output reg [n-1:0] y;
 always @(sel or a or b)
 begin 
 if(sel==0)

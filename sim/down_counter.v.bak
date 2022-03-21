@@ -1,0 +1,15 @@
+module updown_counter(clk,reset,count);
+input clk,reset;
+output [2:0] count;
+reg [2:0] count = 0;  
+always @(negedge(clk))//or posedge(reset)
+begin
+if(reset == 1)
+count <= 0;
+else
+if(count == 0)
+count <= 3'b111;
+else
+count <= count - 1; //Decrement counter
+end    
+endmodule

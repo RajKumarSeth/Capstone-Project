@@ -1,7 +1,8 @@
 module DeMux1to2(a,sel,y1,y2);
-input [7:0] a;
+parameter n=4;
+input [n-1:0] a;
 input sel;
-output reg [7:0] y1,y2;
+output reg [n-1:0] y1,y2;
 always @(sel or a)
 begin 
 if(sel==0)

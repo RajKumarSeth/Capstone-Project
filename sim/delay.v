@@ -1,8 +1,12 @@
-module delay(a,sel,sel_1,clk,clear,y);
-input [3:0]a;
-input clk,clear,sel,sel_1;
-output [3:0] y;
-wire [3:0] w1,w2,w3,w4,w5,w6,w7,w8;
+module delay(a,sel,clk,clear,y);
+parameter n=8;
+input [n-1:0]a;
+input clk,clear,sel;
+wire sel_1;
+output [n-1:0] y;
+wire [n-1:0] w1,w2,w3,w4,w5,w6,w7,w8;
+
+assign sel_1=~sel;
 
 DeMux1to2 demux1(.a(a),.sel(sel),.y1(w1),.y2(w2));
 Mux2to1 mux1(.a(w1),.b(w5),.sel(sel),.y(w7));

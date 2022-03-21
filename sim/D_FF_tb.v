@@ -1,7 +1,8 @@
 module d_ff_tb;
-reg [3:0]d;
+parameter n=4;
+reg [n-1:0]d;
 reg clk,clear;
-wire [3:0]q;
+wire [n-1:0]q;
 D_FF d_ff(.d(d),.clk(clk),.clear(clear),.q(q));
 
 initial 

@@ -5,6 +5,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	comp2s
 
+} {} {}} D:/Cap_pro/sim/updown_counter.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/updown_counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module up_counter
+
+Top level modules:
+	up_counter
+
 } {} {}} D:/Cap_pro/sim/fft_4point.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/fft_4point.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module fft_4point
@@ -75,19 +82,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	butterfly
 
-} {} {}} D:/Cap_pro/sim/delay_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/delay_tb.v
+} {} {}} D:/Cap_pro/sim/updown_counter_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/updown_counter_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module delay_tb
+-- Compiling module tb_counter
 
 Top level modules:
-	delay_tb
-
-} {} {}} D:/Cap_pro/sim/last_stage_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/last_stage_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module delay_tb
-
-Top level modules:
-	delay_tb
+	tb_counter
 
 } {} {}} D:/Cap_pro/sim/D_FF_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/D_FF_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -98,10 +98,24 @@ Top level modules:
 
 } {} {}} D:/Cap_pro/sim/comp_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/comp_tb.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module commp_tb
+-- Compiling module comp_tb
 
 Top level modules:
-	commp_tb
+	comp_tb
+
+} {} {}} D:/Cap_pro/sim/delay_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/delay_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module delay_tb
+
+Top level modules:
+	delay_tb
+
+} {} {}} D:/Cap_pro/sim/multiplier_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/multiplier_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module multiplier_tb
+
+Top level modules:
+	multiplier_tb
 
 } {} {}} D:/Cap_pro/sim/Multiplier.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/Multiplier.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -117,12 +131,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	delay
 
-} {} {}} D:/Cap_pro/sim/last_stage.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/last_stage.v
+} {} {}} D:/Cap_pro/sim/D_FF.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/D_FF.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module delay
+-- Compiling module D_FF
 
 Top level modules:
-	delay
+	D_FF
 
 } {} {}} D:/Test/rtl/half_adder.v {1 {vlog -work work -stats=none D:/Test/rtl/half_adder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -131,13 +145,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	half_adder
 
-} {} {}} D:/Cap_pro/sim/D_FF.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/D_FF.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module D_FF
-
-Top level modules:
-	D_FF
-
 } {} {}} D:/Cap_pro/sim/Mux2to1.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/Mux2to1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Mux2to1
@@ -145,18 +152,18 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Mux2to1
 
-} {} {}} D:/Cap_pro/sim/fft_4point_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/fft_4point_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module fft_4point_tb
-
-Top level modules:
-	fft_4point_tb
-
 } {} {}} D:/Cap_pro/sim/add_sub.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/add_sub.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module add_sub
 
 Top level modules:
 	add_sub
+
+} {} {}} D:/Cap_pro/sim/fft_4point_tb.v {1 {vlog -work work -stats=none D:/Cap_pro/sim/fft_4point_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fft_4point_tb
+
+Top level modules:
+	fft_4point_tb
 
 } {} {}}

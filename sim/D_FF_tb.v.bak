@@ -11,14 +11,11 @@ forever #10 clk=~clk;
 end
 initial 
 begin 
-//clear =1;
-//d<=0;
-//#100; clear=0; d<=1;
-//#100 d<=2;
-//#100 d<=3;
-clear=1;
-clear=0;
-//d=clk;
+clear =1;
+d<=0;
+#100; clear=0; d<=1;
+#100 d<=2;
+#100 d<=3;
 end 
 initial $monitor("Input d=%b,clk=%b,clear=%b,Output q=%b",d,clk,clear,q);
 initial #400 $finish;

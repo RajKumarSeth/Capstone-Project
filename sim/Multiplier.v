@@ -1,10 +1,11 @@
 module multiplier(d,c,y);
-input [3:0]d,c;
-output reg [7:0]y;
+parameter n=4;
+input [n-1:0]d,c;
+output reg [2*n-1:0]y;
 wire [39:0]w;
-reg [3:0] a,b,w1,w4;
-wire [7:0] w2;
-reg [7:0] w3;
+reg [n-1:0] a,b,w1,w4;
+wire [2*n-1:0] w2;
+reg [2*n-1:0] w3;
 
 always @(d)
 begin
