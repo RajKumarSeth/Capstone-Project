@@ -1,8 +1,8 @@
 module delay_tb;
 reg [3:0]a;
-reg clk,clear,sel,sel_1;
+reg clk,clear,sel;
 wire [3:0] y;
-delay del(.a(a),.sel(sel),.sel_1(sel_1),.clk(clk),.clear(clear),.y(y));
+delay del(.a(a),.sel(sel),.clk(clk),.clear(clear),.y(y));
 initial 
 begin 
 clk=0;
@@ -12,12 +12,6 @@ initial
 begin 
 sel=0;
 forever #20 sel=~sel;
-end
-initial 
-begin 
-sel_1=0;
-#20
-forever #20 sel_1=~sel_1;
 end
 initial 
 begin 
@@ -34,6 +28,6 @@ a=7;
 //#20 a=0;
 #40 clear=1;
 end
-initial $monitor("Input a=%d,sel=%d,sel_1=%d,clk=%d,clear=%d,Output y=%d",a,sel,sel_1,clk,clear,y);
+initial $monitor("Input a=%d,sel=%d,clk=%d,clear=%d,Output y=%d",a,sel,clk,clear,y);
 initial #400 $finish;
 endmodule  

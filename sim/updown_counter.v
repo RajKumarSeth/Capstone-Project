@@ -2,7 +2,7 @@ module up_counter(clk,reset,count);
 input clk,reset;
 output [2:0] count;
 reg [2:0] count = -1;  
-always @(negedge(clk))//or posedge(reset)
+always @(negedge(clk))
 begin
 if(reset == 1)
 count <= -1;

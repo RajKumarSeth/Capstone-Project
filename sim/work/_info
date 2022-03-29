@@ -9,7 +9,7 @@ z2
 cModel Technology
 dD:/intelFPGA_lite/17.1/modelsim_ase/win32aloem
 vadd_sub
-Z0 !s110 1647759741
+Z0 !s110 1648363500
 !i10b 1
 !s100 cSMcY3W67Ldm=llUSE5=a0
 I<cAoPaPKFAMH8j?akW>l72
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1647759741.000000
+Z4 !s108 1648363500.000000
 !s107 D:/Cap_pro/sim/add_sub.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/add_sub.v|
 !i113 1
@@ -66,13 +66,13 @@ r1
 !s85 0
 31
 !s108 1646709497.000000
-!s107 D:/Cap_pro/sim/Multiplier.v|
-Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/Multiplier.v|
+Z9 !s107 D:/Cap_pro/sim/Multiplier.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/Multiplier.v|
 !i113 1
 R5
 R6
 vbutterfly
-Z10 !s110 1647759742
+R0
 !i10b 1
 !s100 87]IiaM3YmSJUO=1OYH@70
 IhhKVQETINC>?T1oXG2R@20
@@ -93,7 +93,7 @@ R4
 R5
 R6
 vbutterfly_tb
-R10
+R0
 !i10b 1
 !s100 f?@`fMKfNG:K:VAZCa<H<2
 I;CLzXfOhl41O^UJI4jEEl0
@@ -107,7 +107,7 @@ R3
 r1
 !s85 0
 31
-Z11 !s108 1647759742.000000
+R4
 !s107 D:/Cap_pro/sim/butterfly_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/butterfly_tb.v|
 !i113 1
@@ -121,27 +121,27 @@ IKYUDCijRO`H<Do6kz:EE?1
 R1
 R2
 w1647084048
-Z12 8D:/Cap_pro/sim/comp_tb.v
-Z13 FD:/Cap_pro/sim/comp_tb.v
+Z11 8D:/Cap_pro/sim/comp_tb.v
+Z12 FD:/Cap_pro/sim/comp_tb.v
 L0 1
 R3
 r1
 !s85 0
 31
 !s108 1647084051.000000
-Z14 !s107 D:/Cap_pro/sim/comp_tb.v|
-Z15 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/comp_tb.v|
+Z13 !s107 D:/Cap_pro/sim/comp_tb.v|
+Z14 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/comp_tb.v|
 !i113 1
 R5
 R6
 vcomp2s
-!s110 1647760922
+Z15 !s110 1648363501
 !i10b 1
-!s100 lQ2kTCRkYfk]BMA8_MmU:2
-IKaPR[b@Lk1g<7]R9S;U7Q2
+!s100 00Z8^1XOkOhZ<m_hROezM2
+IEK12jz1[`Gg0cb`?aD`@L1
 R1
 R2
-w1647760879
+w1648363294
 8D:/Cap_pro/sim/comp2s.v
 FD:/Cap_pro/sim/comp2s.v
 L0 1
@@ -149,41 +149,41 @@ R3
 r1
 !s85 0
 31
-!s108 1647760922.000000
+Z16 !s108 1648363501.000000
 !s107 D:/Cap_pro/sim/comp2s.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/comp2s.v|
 !i113 1
 R5
 R6
 vcomp_tb
-Z16 !s110 1647759744
+R15
 !i10b 1
 !s100 l<`OlVRH:Yjea]cWC:B[d1
 IiiBdNiJH4Vl=@4Vk=?gdB3
 R1
 R2
 w1647415188
+R11
 R12
-R13
 L0 1
 R3
 r1
 !s85 0
 31
-Z17 !s108 1647759744.000000
+R16
+R13
 R14
-R15
 !i113 1
 R5
 R6
 vD_FF
-R0
+!s110 1648363499
 !i10b 1
 !s100 1nBM]m@MW72Xc@[B^BM5S1
 ISA8X@1I1JWT50hGnOaS;Z2
 R1
 R2
-w1647759686
+w1648118662
 8D:/Cap_pro/sim/D_FF.v
 FD:/Cap_pro/sim/D_FF.v
 L0 1
@@ -191,7 +191,7 @@ R3
 r1
 !s85 0
 31
-!s108 1647759740.000000
+!s108 1648363499.000000
 !s107 D:/Cap_pro/sim/D_FF.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/D_FF.v|
 !i113 1
@@ -199,13 +199,13 @@ R5
 R6
 n@d_@f@f
 vd_ff_tb
-R0
+!s110 1648389182
 !i10b 1
-!s100 nN<Sg?NU=X9?G]X2S^lD23
-I?TPZJ`1ckhH7gLB^MM]?03
+!s100 :72M2ZUS7ID2Agj9TJdVL2
+Ig@Cc5XI>lndTb0bzQNd^H2
 R1
 R2
-w1647428235
+w1648389177
 8D:/Cap_pro/sim/D_FF_tb.v
 FD:/Cap_pro/sim/D_FF_tb.v
 L0 1
@@ -213,20 +213,20 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1648389182.000000
 !s107 D:/Cap_pro/sim/D_FF_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/D_FF_tb.v|
 !i113 1
 R5
 R6
 vdelay
-!s110 1647760665
+R0
 !i10b 1
 !s100 5]anWA0MkDi>c[U31V?Wa1
 IN:oalLoZ1>Gh`=bo:OcYC3
 R1
 R2
-w1647760642
+w1648121498
 8D:/Cap_pro/sim/delay.v
 FD:/Cap_pro/sim/delay.v
 L0 1
@@ -234,20 +234,20 @@ R3
 r1
 !s85 0
 31
-!s108 1647760665.000000
+R4
 !s107 D:/Cap_pro/sim/delay.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/delay.v|
 !i113 1
 R5
 R6
 vdelay_tb
-R10
+R0
 !i10b 1
-!s100 5<MP=OEc7<7z0JNzWb5LP3
-IAeT]?@jXCA_bK<nfDCE@T2
+!s100 GLI>VD?LG<Yz5:U`jH0??3
+Ia4ciZzLokOV7:`PTDa^K<2
 R1
 R2
-w1646797239
+w1648120273
 8D:/Cap_pro/sim/delay_tb.v
 FD:/Cap_pro/sim/delay_tb.v
 L0 1
@@ -255,7 +255,7 @@ R3
 r1
 !s85 0
 31
-R11
+R4
 !s107 D:/Cap_pro/sim/delay_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/delay_tb.v|
 !i113 1
@@ -269,44 +269,44 @@ I:J1m0gzBdoPXlCdAdj7R[1
 R1
 R2
 w1645431991
-Z18 8D:/Cap_pro/sim/DeMux1to2.v
-Z19 FD:/Cap_pro/sim/DeMux1to2.v
+Z17 8D:/Cap_pro/sim/DeMux1to2.v
+Z18 FD:/Cap_pro/sim/DeMux1to2.v
 L0 1
 R3
 r1
 !s85 0
 31
 !s108 1645431995.000000
-Z20 !s107 D:/Cap_pro/sim/DeMux1to2.v|
-Z21 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/DeMux1to2.v|
+Z19 !s107 D:/Cap_pro/sim/DeMux1to2.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/DeMux1to2.v|
 !i113 1
 R5
 R6
 n@de@mux
 vDeMux1to2
-R10
+R0
 !i10b 1
 !s100 eID[mLXT^V64`52H4LlB`1
 IdG2ojfQ5A?Ffj_^iDiGXk0
 R1
 R2
 w1647759641
+R17
 R18
-R19
 L0 1
 R3
 r1
 !s85 0
 31
-R11
+R4
+R19
 R20
-R21
 !i113 1
 R5
 R6
 n@de@mux1to2
 vDeMux1to2_tb
-R10
+R0
 !i10b 1
 !s100 Idg=;JJMfV@_@oBm;PHJk1
 Il=C6Gn1m^I]V02]1SH`Cb1
@@ -320,7 +320,7 @@ R3
 r1
 !s85 0
 31
-R11
+R4
 !s107 D:/Cap_pro/sim/DeMux1to2_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/DeMux1to2_tb.v|
 !i113 1
@@ -328,7 +328,7 @@ R5
 R6
 n@de@mux1to2_tb
 vdown_counter
-R16
+!s110 1647759744
 !i10b 1
 !s100 j`O>FD0MbBUKH?T=<?Z=k2
 IzCTdIIiM0^;GPHWcCPD7P1
@@ -342,20 +342,20 @@ R3
 r1
 !s85 0
 31
-R17
+!s108 1647759744.000000
 !s107 D:/Cap_pro/sim/down_counter.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/down_counter.v|
 !i113 1
 R5
 R6
 vfft_4point
-!s110 1647760661
+R15
 !i10b 1
-!s100 mROIXJfOoPn1oAG04P6Wd3
-IC;?5lTTVW2eXKP2c;KnEC2
+!s100 IMTF63IQdPFoUTc9=Wo;_0
+IFIdD2gAdmlXUKb[AnTV=L3
 R1
 R2
-w1647760608
+w1648363302
 8D:/Cap_pro/sim/fft_4point.v
 FD:/Cap_pro/sim/fft_4point.v
 L0 1
@@ -363,14 +363,14 @@ R3
 r1
 !s85 0
 31
-!s108 1647760661.000000
+R16
 !s107 D:/Cap_pro/sim/fft_4point.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/fft_4point.v|
 !i113 1
 R5
 R6
 vfft_4point_tb
-Z22 !s110 1647759743
+R15
 !i10b 1
 !s100 Mz5kI:5aH[J6]3B4:5ReW0
 Ih_hJcaF188YJPVLB`L76D3
@@ -384,20 +384,20 @@ R3
 r1
 !s85 0
 31
-Z23 !s108 1647759743.000000
+R16
 !s107 D:/Cap_pro/sim/fft_4point_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/fft_4point_tb.v|
 !i113 1
 R5
 R6
 vfft_8point
-!s110 1647760669
+R15
 !i10b 1
-!s100 YdSIj@ALE774k?a[IO[h62
-I6gJ7l5RWzVGFh7GHV5CUU3
+!s100 4@EjM4z_XXN0P6Xb[WP4Y2
+I0=NWLBce[oA2H?mnlozz>3
 R1
 R2
-w1647760584
+w1648363242
 8D:/Cap_pro/sim/fft_8point.v
 FD:/Cap_pro/sim/fft_8point.v
 L0 1
@@ -405,20 +405,20 @@ R3
 r1
 !s85 0
 31
-!s108 1647760669.000000
+R16
 !s107 D:/Cap_pro/sim/fft_8point.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/fft_8point.v|
 !i113 1
 R5
 R6
 vfft_8point_tb
-R16
+!s110 1648389056
 !i10b 1
-!s100 >5F9>gVJ3BX3>`aEA7B5I2
-INE^>J8C?6f6j6[@3VRUbZ3
+!s100 _SB`gj?OXAJY?ge=JnPRh1
+I:A91KSCA5UT^bUW_Jf6VW1
 R1
 R2
-w1647430138
+w1648367056
 8D:/Cap_pro/sim/fft_8point_tb.v
 FD:/Cap_pro/sim/fft_8point_tb.v
 L0 1
@@ -426,7 +426,7 @@ R3
 r1
 !s85 0
 31
-R17
+!s108 1648389055.000000
 !s107 D:/Cap_pro/sim/fft_8point_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/fft_8point_tb.v|
 !i113 1
@@ -517,13 +517,13 @@ r1
 R5
 R6
 vmultiplier
-!s110 1647761553
+R15
 !i10b 1
 !s100 8C981nzbc2fMCKWX0oN@52
 IhJaQhm9zHnK>20SN06aGZ2
 R1
 R2
-w1647761549
+w1648121683
 R7
 R8
 L0 1
@@ -531,14 +531,14 @@ R3
 r1
 !s85 0
 31
-!s108 1647761553.000000
-!s107 D:/Cap_pro/sim/Multiplier.v|
+R16
 R9
+R10
 !i113 1
 R5
 R6
 vmultiplier_tb
-R16
+R15
 !i10b 1
 !s100 z_0CfGazUU70`C6^hFLFB1
 IZaHD:]4QOBe<ldbkBoaHb2
@@ -552,7 +552,7 @@ R3
 r1
 !s85 0
 31
-R17
+R16
 !s107 D:/Cap_pro/sim/multiplier_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/multiplier_tb.v|
 !i113 1
@@ -566,22 +566,22 @@ IlzYN3d[G[d=aUn^c36K3=1
 R1
 R2
 w1645538384
-Z24 8D:/Cap_pro/sim/Mux2to1_tb.v
-Z25 FD:/Cap_pro/sim/Mux2to1_tb.v
+Z21 8D:/Cap_pro/sim/Mux2to1_tb.v
+Z22 FD:/Cap_pro/sim/Mux2to1_tb.v
 L0 2
 R3
 r1
 !s85 0
 31
 !s108 1645538395.000000
-Z26 !s107 D:/Cap_pro/sim/Mux2to1_tb.v|
-Z27 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/Mux2to1_tb.v|
+Z23 !s107 D:/Cap_pro/sim/Mux2to1_tb.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/Mux2to1_tb.v|
 !i113 1
 R5
 R6
 n@mux1to2_tb
 vMux2to1
-R22
+R15
 !i10b 1
 !s100 cO?[lMX?6d7nDUSKF`K=j1
 I[bl>F36099V;6^4fF:n_B1
@@ -595,7 +595,7 @@ R3
 r1
 !s85 0
 31
-R23
+R16
 !s107 D:/Cap_pro/sim/Mux2to1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/Mux2to1.v|
 !i113 1
@@ -603,29 +603,29 @@ R5
 R6
 n@mux2to1
 vMux2to1_tb
-R22
+R15
 !i10b 1
 !s100 Q7=bjLQ]N:]1D9c3VkTYk2
 IH<gDm]kWFdXI9BEjVYHm91
 R1
 R2
 w1646621865
-R24
-R25
+R21
+R22
 L0 2
 R3
 r1
 !s85 0
 31
+R16
 R23
-R26
-R27
+R24
 !i113 1
 R5
 R6
 n@mux2to1_tb
 vtb_counter
-R16
+Z25 !s110 1648363502
 !i10b 1
 !s100 5][O9m1gYahAETXk>WLzC3
 I<c:NZCX;4Hi3Ela9jZ5Hc1
@@ -639,30 +639,30 @@ R3
 r1
 !s85 0
 31
-R17
+Z26 !s108 1648363502.000000
 !s107 D:/Cap_pro/sim/updown_counter_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/updown_counter_tb.v|
 !i113 1
 R5
 R6
 vup_counter
-R16
+R25
 !i10b 1
 !s100 XDEanRi4na;4IP?j@X@Lz1
 I6]b10G486IM[<mG1H:Z@A3
 R1
 R2
-w1647428737
-Z28 8D:/Cap_pro/sim/updown_counter.v
-Z29 FD:/Cap_pro/sim/updown_counter.v
+w1648363278
+Z27 8D:/Cap_pro/sim/updown_counter.v
+Z28 FD:/Cap_pro/sim/updown_counter.v
 L0 1
 R3
 r1
 !s85 0
 31
-R17
-Z30 !s107 D:/Cap_pro/sim/updown_counter.v|
-Z31 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/updown_counter.v|
+R26
+Z29 !s107 D:/Cap_pro/sim/updown_counter.v|
+Z30 !s90 -reportprogress|300|-work|work|-stats=none|D:/Cap_pro/sim/updown_counter.v|
 !i113 1
 R5
 R6
@@ -674,16 +674,16 @@ I7MA2Xc;5z0K6HRn3gzL1E0
 R1
 R2
 w1647157195
+R27
 R28
-R29
 L0 1
 R3
 r1
 !s85 0
 31
 !s108 1647157200.000000
+R29
 R30
-R31
 !i113 1
 R5
 R6
