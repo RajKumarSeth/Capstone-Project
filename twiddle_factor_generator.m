@@ -18,3 +18,4 @@ twid_fact=[real_twiddle ; im_twiddle]'
 fileID = fopen('C:\Users\prana\Desktop\twiddle_factor.txt','w');
 fprintf(fileID,'%.4f %.4f \n',[real_twiddle ; im_twiddle]);
 fclose(fileID);
+#
