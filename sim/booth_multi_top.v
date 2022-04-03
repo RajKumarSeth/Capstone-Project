@@ -1,20 +1,22 @@
-module booth_multi_top(M,Q,Z);
-  input [3:0] M, Q;
-  output [7:0] Z;
+module booth_multi_top(M,Q,P);
   
-  wire [3:0] A_out1;
-  wire [4:0] Q_out1;
+  parameter n=8;
+  input [n-1:0] M, Q;
+  output [2*n-1:0] P;
+  
+  wire [n-1:0] A_out1;
+  wire [n:0] Q_out1;
   
   booth_multi bm1(
-  .A_in(4'b0000),
+  .A_in(8'b0),
   .M(M),
   .Q_in({Q,1'b0}),
   .A_out(A_out1),
   .Q_out(Q_out1)
   );
   
-  wire [3:0] A_out2;
-  wire [4:0] Q_out2;
+  wire [n-1:0] A_out2;
+  wire [n:0] Q_out2;
   
   booth_multi bm2(
   .A_in(A_out1),
@@ -24,9 +26,8 @@ module booth_multi_top(M,Q,Z);
   .Q_out(Q_out2)
   );
   
-  wire [3:0] A_out3;
-  wire [4:0] Q_out3;
-  
+  wire [n-1:0] A_out3;
+  wire [n:0] Q_out3;
   booth_multi bm3(
   .A_in(A_out2),
   .M(M),
@@ -35,9 +36,8 @@ module booth_multi_top(M,Q,Z);
   .Q_out(Q_out3)
   );
   
-  wire [3:0] A_out4;
-  wire [4:0] Q_out4;
-  
+  wire [n-1:0] A_out4;
+  wire [n:0] Q_out4;
   booth_multi bm4(
   .A_in(A_out3),
   .M(M),
@@ -46,6 +46,46 @@ module booth_multi_top(M,Q,Z);
   .Q_out(Q_out4)
   );
   
-  assign Z = {A_out4,Q_out4[4:1]};
+  wire [n-1:0] A_out5;
+  wire [n:0] Q_out5;
+  booth_multi bm5(
+  .A_in(A_out4),
+  .M(M),
+  .Q_in(Q_out4),
+  .A_out(A_out5),
+  .Q_out(Q_out5)
+  );
+  
+  wire [n-1:0] A_out6;
+  wire [n:0] Q_out6;
+  booth_multi bm6(
+  .A_in(A_out5),
+  .M(M),
+  .Q_in(Q_out5),
+  .A_out(A_out6),
+  .Q_out(Q_out6)
+  );
+  
+  wire [n-1:0] A_out7;
+  wire [n:0] Q_out7;
+  booth_multi bm7(
+  .A_in(A_out6),
+  .M(M),
+  .Q_in(Q_out6),
+  .A_out(A_out7),
+  .Q_out(Q_out7)
+  );
+  
+  wire [n-1:0] A_out8;
+  wire [n:0] Q_out8; 
+  booth_multi bm8(
+  .A_in(A_out7),
+  .M(M),
+  .Q_in(Q_out7),
+  .A_out(A_out8),
+  .Q_out(Q_out8)
+  );
+  
+  assign P = {A_out8,Q_out8[n:1]};
    
 endmodule
