@@ -1,5 +1,5 @@
 module DeMux1to2(a,sel,y1,y2);
-parameter n=8;
+parameter n=16;
 input [n-1:0] a;
 input sel;
 output reg [n-1:0] y1,y2;

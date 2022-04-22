@@ -1,5 +1,5 @@
 module Mux2to1(a,b,sel,y);
-parameter n=8;
+parameter n=16;
 input [n-1:0] a,b;
 input sel;
 output reg [n-1:0] y;
