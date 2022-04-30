@@ -4,7 +4,7 @@ input [n-1:0]a,c,d;
 input clk,clear;
 input [2:0] sel;
 output [n/2-1:0] y_r,y_im;
-wire [n-1:0] w1,w2,w3,w4,w5,w6,w7,w8,w9,w10,w11,w12,w13;
+wire [n-1:0] w1,w2,w3,w4,w5,w6,w7,w8,w9,w10,w11,w12,w13,w14;
 wire [2:0] sel_1;
 
 //up_counter co1(.clk(clk),.reset(clear),.count(sel));
@@ -24,6 +24,7 @@ D_FF dff4(.d(w12),.clk(clk),.clear(clear),.q(w3));
 DeMux1to2 demux2(.a(w3),.sel(sel_1[2]),.y1(w8),.y2(w6));
 butterfly but(.a(w8),.b(w2),.y1(w4),.y2(w5));
 booth_multiplier_top ml(.a(w6),.b(c),.y(w13));
-Mux2to1 mux(.a(w4),.b(w13),.sel(sel_1[2]),.y(w10));
+quantize q(.w(w13),.clear(clear),.z(w14));
+Mux2to1 mux(.a(w4),.b(w14),.sel(sel_1[2]),.y(w10));
 fft_4point point_4fft(.a(w10),.c(d),.sel(sel[1:0]),.clk(clk),.clear(clear),.y_r(y_r),.y_im(y_im));
 endmodule

@@ -1,4 +1,4 @@
-module booth_multi(A_in, M, Q_in, Q_out, A_out);
+module booth(A_in, M, Q_in, Q_out, A_out);
 parameter n=8;
   input [n-1:0] A_in, M;
   input [n:0] Q_in;

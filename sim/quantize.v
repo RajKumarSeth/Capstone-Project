@@ -1,15 +1,17 @@
-module quantize(w_r,w_im,clear,z_r,z_im);
+module quantize(w,clear,z);
 `define qu 3
-parameter n=8;
-input [n-1:0] w_r,w_im;
+parameter n=16;
+input [n-1:0] w;
 input clear;
-output reg [n-1:0] z_r,z_im;
-
-wire [n-1:0] z1_r,z1_im;
-reg [n-1:0] w1_r,w1_im;
+output [n-1:0] z;
+wire [n/2-1:0] w_r,w_im;
+wire [n/2-1:0] z1_r,z1_im;
+reg [n/2-1:0] z_r,z_im,w1_r,w1_im;
 
 //booth_top b1(.M(b_r),.Q(a_r),.Z(w_r));
 //booth_top b2(.M(b_im),.Q(a_im),.Z(w_im));
+assign w_r=w[n-1:n/2];
+assign w_im=w[n/2-1:0];
 
 always @(w_im or w_r)
 begin
@@ -48,6 +50,6 @@ z_im=z1_im;
 
 end
 end
-
+assign z={z_r,z_im};
 endmodule
 
