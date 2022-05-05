@@ -24,6 +24,7 @@ D_FF dff4(.d(w12),.clk(clk),.clear(clear),.q(w3));
 DeMux1to2 demux2(.a(w3),.sel(sel_1[2]),.y1(w8),.y2(w6));
 butterfly but(.a(w8),.b(w2),.y1(w4),.y2(w5));
 booth_multiplier_top ml(.a(w6),.b(c),.y(w13));
+//multi_8bit_top ml(.a(w6),.b(c),.y(w13));
 quantize q(.w(w13),.clear(clear),.z(w14));
 Mux2to1 mux(.a(w4),.b(w14),.sel(sel_1[2]),.y(w10));
 fft_4point point_4fft(.a(w10),.c(d),.sel(sel[1:0]),.clk(clk),.clear(clear),.y_r(y_r),.y_im(y_im));

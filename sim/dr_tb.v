@@ -13,14 +13,14 @@ end
 
 initial 
 begin 
-assign i=-1;
+i=-1;
 forever 
 begin 
 i=i+1;
 s0= ~i[3]+i[0];
 s1= ~i[2]+i[1];
 if(i==4'b1111)
-assign i=0;
+i=-1;
 end
 end 
 
